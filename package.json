@@ -1,0 +1,19 @@
+{
+  "name": "hacktech-project",
+  "version": "1.0.0",
+  "description": "Website helping farmers be more sustainable",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aarana12/Hacktech-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aarana12/Hacktech-project/issues"
+  },
+  "homepage": "https://github.com/Aarana12/Hacktech-project#readme"
+}
