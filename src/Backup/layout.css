@@ -1,0 +1,200 @@
+@charset "utf-8";
+
+/* This is where the layout of the website will be to make it responsive */
+
+/* Body Styles */
+
+ body {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1100px;
+    min-width: 640px;
+    width: 95%
+}
+
+body > header > img {
+    display: block;
+    width: 10%;
+}
+
+/* Horizontal Navigation Styles */
+
+nav.horizontal a {
+    display: block;
+    text-align: center;
+}
+
+nav.horizontal .flex {
+    justify-content: space-between;
+} 
+
+nav.horizontal ul {
+    display: flex;
+} 
+
+nav.horizontal a {
+    padding-bottom: 15px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 5px;
+}
+
+nav.horizontal a:hover {
+    border-bottom: 2px white solid;
+}
+
+.horizontal {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 20px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Grid Styles */ 
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: aut;
+    width: auto;
+}
+
+.main .grid {
+    overflow: auto;
+    grid-template-columns: 55% 45%;
+    gap: 20px;
+}
+
+.grid-3 {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 10px;
+}
+
+/* Main Styles */ 
+
+.main {
+    height: 400px;
+    position: relative;
+}
+
+.main h1 {
+    font-size: 40px;
+}
+
+.main p {
+    margin: 20pc 0;
+}
+
+.main-text {
+    position: relative;
+    width: auto;
+    padding: 10px;
+    line-height: 2em;
+}
+
+.main-classes {
+    position: relative;
+    width: auto;
+    padding: 10px;
+}
+
+
+div.classes {
+    min-height: 400px;
+    outline: 1px solid lightpink;
+}
+
+
+/* Project Styles */ 
+
+.project .grid {
+    grid-template-columns: 45% 45%;
+    overflow: auto;
+    max-width: 1100px;
+}
+
+.project .card {
+    max-width: 400px;
+    text-align: center;
+    height: 200px;
+}
+
+/* Letter */
+
+article {
+    padding: 20px;
+    line-height: 30px;
+}
+
+article p {
+    text-indent: 1em;
+    font-size: 1em;
+    padding: 10px;
+}
+
+article p:first-of-type::first-line {
+    font-variant: small-caps;
+}
+
+article br {
+    line-height: 30px;
+}
+
+/* Tablet Mode and smaller */ 
+@media (max-width: 768px) {
+    .grid, .main .grid , .hobby .grid, .project .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .main {
+        height: auto;
+    }
+
+    .main-text {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .main-classes {
+        justify-self: center;
+        margin: auto;
+    }
+}
+
+/*Mobile */
+
+@media (max-width: 500px) {
+    nav.horizontal {
+        height: 300px;
+        margin: 30px 25px 0px 0px;
+        width: 100%;
+    }
+
+   li a {
+       display: block;
+       width: 60px;
+   }
+
+    .main-classes {
+        width: 300px;
+    }
+}
