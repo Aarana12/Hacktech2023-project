@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+/* This is where the layout of the website will be to make it responsive */
+
+/* Body Styles */
+
+ body {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1100px;
+    min-width: 640px;
+    width: 95%
+}
+
+body > header > img {
+    display: block;
+    width: 10%;
+}
+
+/* Horizontal Navigation Styles */
+
+nav.horizontal a {
+    display: block;
+    text-align: center;
+}
+
+nav.horizontal .flex {
+    justify-content: space-between;
+} 
+
+nav.horizontal ul {
+    display: flex;
+} 
+
+nav.horizontal a {
+    padding-bottom: 15px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 5px;
+}
+
+nav.horizontal a:hover {
+    border-bottom: 2px white solid;
+}
+
+.horizontal {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 20px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+/* Tablet Mode and smaller */ 
+@media (max-width: 768px) {
+    .grid, .main .grid , .hobby .grid, .project .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .main {
+        height: auto;
+    }
+
+    .main-text {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .main-classes {
+        justify-self: center;
+        margin: auto;
+    }
+}
+
+/*Mobile */
+
+@media (max-width: 500px) {
+    nav.horizontal {
+        height: 300px;
+        margin: 30px 25px 0px 0px;
+        width: 100%;
+    }
+
+   li a {
+       display: block;
+       width: 60px;
+   }
+
+    .main-classes {
+        width: 300px;
+    }
+}
